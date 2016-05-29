@@ -1,2 +1,2 @@
 # Yahoo-Downloader
-Automatic Stock Downloader from Yahoo
+Automatic Stock Downloader from Yahoo in Python
