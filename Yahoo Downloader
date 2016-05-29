@@ -1,3 +1,4 @@
+```python
 import pandas as pd
 from pandas_datareader import data, wb
 import datetime as dt
@@ -13,3 +14,4 @@ end = dt.date(year, month, day)
 df = data.DataReader("AAPL", 'yahoo', start, end)
 
 df.to_csv('Yahoo_Data')
+```
