@@ -12,8 +12,11 @@ date_end = input('Enter an end date (YYYY-MM-DD): ')
 year, month, day = map(int, date_end.split('-'))
 end = dt.date(year, month, day)
 
+# Get symbol
+symbol = input('Enter a symbol: ')
+
 # Get yahoo finance data
-df = data.DataReader("AAPL", 'yahoo', start, end)
+df = data.DataReader(symbol, 'yahoo', start, end)
 
 # Convert to CSV
 df.to_csv('Yahoo_Data')
